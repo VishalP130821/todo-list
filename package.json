@@ -9,6 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.2",
+    "build": "^0.1.4",
     "ejs": "^2.6.1",
     "express": "^4.17.3",
     "lodash": "^4.17.21",
