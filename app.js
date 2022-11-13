@@ -72,12 +72,12 @@ app.get("/", function (req, res) {
 
       var options = {
         weekday: "long",
-        day: "numeric", 
+        day: "numeric",
         month: "long"
-       }
+      }
 
 
-      var day =today.toLocaleDateString(today.getTimezoneOffset(), options);
+      var day = today.toLocaleDateString(today.getTimezoneOffset(), options);
       res.render("list", {
         listTitle: day,
         newListItems: foundItems
@@ -100,7 +100,7 @@ app.get('/:customListName', function (req, res) {
     name: customListName,
     items: defaultItems
   });
-  
+
   list.save();
 
 });
